@@ -204,7 +204,7 @@ nav a:hover{
   color: #284040;
   text-align: center;
   overflow-y: hidden;
-  font-size: 2.3em;
+  font-size: 2em;
 }
 #showcase b{
   color: #e36802;
@@ -213,12 +213,11 @@ nav a:hover{
   color: #d23014;
 }
 .showcase-img{
-  width: 100%;
   margin-top: 90px;
   padding-bottom: 20px;
 
 }
-.img-sharingApple{
+.img-sharingfood{
   max-width: 100%;
   height: auto;
   display: block;
@@ -525,9 +524,8 @@ footer .rightbox h3{
 
   .showcase-text{
     font-size: 1.3em;
-    width: 90%;
+    max-width: 90%;
   }
-
   .showcase-img{
     margin-top: 50px;
   }
@@ -537,14 +535,16 @@ footer .rightbox h3{
 /*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 540PX-------------------*/
 @media screen and (max-width: 540px){
 
-  .showcase-text{
-    padding-top: 140px;
-    font-size: 0.8em;
-    width: 87%;
+  #showcase{
+    max-width: 100vw;
+    max-height: 100vh;
   }
-
+  .showcase-text{
+    font-size: 0.9em;
+    max-width: 87%;
+  }
   .showcase-img{
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 /*------------------END SHOWCASE FOR A SCREEN WITH MAX-WIDTH 540PX-------------------*/
@@ -581,6 +581,20 @@ footer .rightbox h3{
   }
 }
 /*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
+
+/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 540PX-------------------*/
+@media screen and (max-width: 540px){
+ .content p{
+   font-size: 1em;
+ }
+.content h1{
+  font-size: 1.6em;
+}
+.content ul li a{
+  font-size: 1em;
+}
+}
+/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 540PX-------------------*/
 
 /*------------------FOOTER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 /*------------------FOOTER-------------------*/
